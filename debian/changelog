@@ -1,3 +1,21 @@
+libmspack (0.6-3ubuntu0.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-14679-and-CVE-2018-14680.patch:
+      fix in chmd.c.
+    - CVE-2018-14679
+    - CVE-2018-14680
+  * SECURITY UPDATE: Bytes overwire with bad KWAJ file extension
+    - debian/patches/CVE-2018-14681.patch: fix in Makefile.am,
+      mspack/kwajd.c, test/kwajd_test.c and add some files
+      for test propose in test_files/kwajd/f*.kwj.
+    - CVE-2018-14681
+  * SECURITY UPDATE: Off-by-one error
+    - debian/patches/CVE-2018-14682.patch: fix in mspack/chmd.c.
+    - CVE-2018-14682
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 01 Aug 2018 10:40:12 -0300
+
 libmspack (0.6-3) unstable; urgency=medium
 
   * Move doc generation in dh's indep rules to fix FTBFS
