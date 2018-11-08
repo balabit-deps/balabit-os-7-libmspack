@@ -1,3 +1,15 @@
+libmspack (0.6-3ubuntu0.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-18585.patch: Ensure file names are valid in chmd.c
+    - CVE-2018-18585
+  * SECURITY UPDATE: One byte buffer overflow -
+    - debian/patches/CVE-2018-18584.patch: Ensure input buffer is large
+      enough in cab.h
+    - CVE-2018-18584
+
+ -- Alex Murray <alex.murray@canonical.com>  Thu, 08 Nov 2018 22:45:35 +1030
+
 libmspack (0.6-3ubuntu0.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service
